@@ -10,12 +10,14 @@ Single Shot MultiBox Detector (SSD) 是一种单阶段的目标检测器。与�
 ![Image text](https://github.com/cyy1111-cai/SSD-paddlepaddle/blob/main/ssd.png)
 
 
-SSD 可以方便地插入到任何一种标准卷积网络中，比如 VGG、ResNet 或者 MobileNet，这些网络被称作检测器的基网络。在这个示例中我们使用 MobileNet。
+SSD正是利用了来自多个特征图上的信息进行检测的。比如VGG、ResNet、MobileNet这些都属于提取特征的网络。很多时候会叫Backbone。在这个示例中我们使用 MobileNet。
 在训练时还会对图片进行数据增强，包括随机扰动、扩张、翻转和裁剪:
 
 扰动: 扰动图片亮度、对比度、饱和度和色相。
 扩张: 将原始图片放进一张使用像素均值填充(随后会在减均值操作中减掉)的扩张图中，再对此图进行裁剪、缩放和翻转。
 翻转: 水平翻转。
 裁剪: 根据缩放比例、长宽比例两个参数生成若干候选框，再依据这些候选框和标注框的面积交并比(IoU)挑选出符合要求的裁剪结果。
-参考链接
+
 参考论文：https://arxiv.org/pdf/1512.02325.pdf
+
+MobileNet-SSD
