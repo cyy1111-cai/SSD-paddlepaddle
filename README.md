@@ -11,7 +11,8 @@ Single Shot MultiBox Detector (SSD) 是一种单阶段的目标检测器。与�
 
 
 SSD正是利用了来自多个特征图上的信息进行检测的。比如VGG、ResNet、MobileNet这些都属于提取特征的网络。很多时候会叫Backbone。在这个示例中我们使用 MobileNet。
-![Image text]
+MobileNet-SSD体结构如下图所示:
+![Image text](https://github.com/cyy1111-cai/SSD-paddlepaddle/blob/main/mobilenet-ssd.png)
 
 
 
@@ -27,4 +28,4 @@ SSD正是利用了来自多个特征图上的信息进行检测的。比如VGG�
 
 参考论文：https://arxiv.org/pdf/1512.02325.pdf
 
-MobileNet-SSD
+
